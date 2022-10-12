@@ -3,23 +3,22 @@
   <a href="https://github.com/leonardomso/33"><img src="https://i.imgur.com/dsHmk6H.jpg" alt="33 Concepts Every JS Developer Should Know" width=200" /></a>
   <br>
     <br>
-  33 Concepts Every JavaScript Developer Should Know
+  33 Conceptes que tot desenvolupador JavaScript hauria de saber
   <br><br>
 </h1>
 
 [![Follow me](https://img.shields.io/twitter/follow/leonardomso.svg?style=for-the-badge)](https://twitter.com/leonardomso)
 
-## Introduction
+## Introducció
 
-This repository was created with the intention of helping developers master their concepts in JavaScript. It is not a requirement, but a guide for future studies. It is based on an article written by [Stephen Curtis](https://twitter.com/stephenthecurt) and you can read it [here](https://medium.com/@stephenthecurt/33-fundamentals-every-javascript-developer-should-know-13dd720a90d1).
+Aquest repositori va ser creat amb la intenció d'ajudar els desenvolupadors a dominar els seus conceptes en JavaScript. No és un requisit, sinó una guia per a futurs estudis. Està basat en un article escrit per [Stephen Curtis](https://twitter.com/stephenthecurt) i pot llegir-ho [aquí](https://medium.com/@stephenthecurt/33-fundamentals-every-javascript-developer-should-know-13dd720a90d1).
 
-**🚀 Considered by GitHub as one of the [top open source projects of 2018!](https://blog.github.com/2018-12-13-new-open-source-projects/)**
+**🚀 Considetat per GitHub com un dels [millors projectes de codi lliure del 2018!](https://blog.github.com/2018-12-13-new-open-source-projects/)**
 
-## Community
+## Comunitat
+Sigues lliure d'enviar un PR agregant un enllaç als seus propis resums o comentaris. Si desitjes traduir el repositori al teu idioma natiu, no dubti a fer-ho.
 
-Feel free to submit a PR adding a link to your own recaps or reviews. If you want to translate the repo into your native language, please feel free to do so.
-
-All the translations for this repo will be listed below:
+Totes les traducciones per aquest repositori es llisten a continuació:
 
 - [Shqip (Albanian)](https://github.com/eldrinf/33-js-concepts-albanian.git) — Eldrin Ereqi
 - [اَلْعَرَبِيَّةُ‎ (Arabic)](https://github.com/amrsekilly/33-js-concepts) — Amr Elsekilly
@@ -42,50 +41,51 @@ All the translations for this repo will be listed below:
 - [සිංහල (Sinhala)](https://github.com/ududsha/33-js-concepts) — Udaya Shamendra
 - [Italiano (Italian)](https://github.com/Donearm/33-js-concepts) — Gianluca Fiore
 - [Malagasy (Madagascar)](https://github.com/chrys-elrak/33-js-concepts) — Chrys Rakotonimanana
+- [Català (Catalan)](https://github.com/marioestradaf/33-js-concepts) — Mario Estrada
 
 ---
 
-## <a id="table-of-contents">Table of Contents</a>
+## <a id="table-of-contents">Taula de Continguts</a>
 
-1. **[Call Stack](#1-call-stack)**
-2. **[Primitive Types](#2-primitive-types)**
-3. **[Value Types and Reference Types](#3-value-types-and-reference-types)**
-4. **[Implicit, Explicit, Nominal, Structuring and Duck Typing](#4-implicit-explicit-nominal-structuring-and-duck-typing)**
+1. **[Pila d'Execució](#1-call-stack)**
+2. **[Tipus Primitius](#2-primitive-types)**
+3. **[Tipus de Valors i Tipus de Referència](#3-value-types-and-reference-types)**
+4. **[Implícit, Explícit, Nominal, Estructuració i _Duck Typing_](#4-implicit-explicit-nominal-structuring-and-duck-typing)**
 5. **[== vs === vs typeof](#5--vs--vs-typeof)**
-6. **[Function Scope, Block Scope and Lexical Scope](#6-function-scope-block-scope-and-lexical-scope)**
-7. **[Expression vs Statement](#7-expression-vs-statement)**
-8. **[IIFE, Modules and Namespaces](#8-iife-modules-and-namespaces)**
-9. **[Message Queue and Event Loop](#9-message-queue-and-event-loop)**
-10. **[setTimeout, setInterval and requestAnimationFrame](#10-settimeout-setinterval-and-requestanimationframe)**
-11. **[JavaScript Engines](#11-javascript-engines)**
-12. **[Bitwise Operators, Type Arrays and Array Buffers](#12-bitwise-operators-type-arrays-and-array-buffers)**
-13. **[DOM and Layout Trees](#13-dom-and-layout-trees)**
-14. **[Factories and Classes](#14-factories-and-classes)**
-15. **[this, call, apply and bind](#15-this-call-apply-and-bind)**
-16. **[new, Constructor, instanceof and Instances](#16-new-constructor-instanceof-and-instances)**
-17. **[Prototype Inheritance and Prototype Chain](#17-prototype-inheritance-and-prototype-chain)**
+6. **[Abast de Funció, Àmbit de Bloc i Abast Lèxic](#6-function-scope-block-scope-and-lexical-scope)**
+7. **[Expresió vs Sentència](#7-expression-vs-statement)**
+8. **[IIFE, Mòduls i _Namespaces_](#8-iife-modules-and-namespaces)**
+9. **[Cúa de Missatges i Loop d'Events](#9-message-queue-and-event-loop)**
+10. **[setTimeout, setInterval i requestAnimationFrame](#10-settimeout-setinterval-and-requestanimationframe)**
+11. **[Motors JavaScript](#11-javascript-engines)**
+12. **[Operadorss Bitwise, Tipus i _Buffers_ d'Array](#12-bitwise-operators-type-arrays-and-array-buffers)**
+13. **[DOM i Disseny d'Arbre](#13-dom-and-layout-trees)**
+14. **[Factories i Classes](#14-factories-and-classes)**
+15. **[this, call, apply i bind](#15-this-call-apply-and-bind)**
+16. **[new, Constructor, instanceof i Instances](#16-new-constructor-instanceof-and-instances)**
+17. **[Herència i Cadena de Prototipus](#17-prototype-inheritance-and-prototype-chain)**
 18. **[Object.create and Object.assign](#18-objectcreate-and-objectassign)**
 19. **[map, reduce, filter](#19-map-reduce-filter)**
-20. **[Pure Functions, Side Effects, State Mutation and Event Propagation](#20-pure-functions-side-effects-state-mutation-and-event-propagation)**
+20. **[Funcions Pures, Efectes Laterals, Mutació d'Estat i Propagació d'Events](#20-pure-functions-side-effects-state-mutation-and-event-propagation)**
 21. **[Closures](#21-closures)**
-22. **[High Order Functions](#22-high-order-functions)**
-23. **[Recursion](#23-recursion)**
-24. **[Collections and Generators](#24-collections-and-generators)**
-25. **[Promises](#25-promises)**
+22. **[Funcións d'Ordre Superior](#22-high-order-functions)**
+23. **[Recursivitat](#23-recursion)**
+24. **[Col·leccions i Generadors](#24-collections-and-generators)**
+25. **[Promeses](#25-promises)**
 26. **[async/await](#26-asyncawait)**
-27. **[Data Structures](#27-data-structures)**
-28. **[Expensive Operation and Big O Notation](#28-expensive-operation-and-big-o-notation)**
-29. **[Algorithms](#29-algorithms)**
-30. **[Inheritance, Polymorphism and Code Reuse](#30-inheritance-polymorphism-and-code-reuse)**
-31. **[Design Patterns](#31-design-patterns)**
-32. **[Partial Applications, Currying, Compose and Pipe](#32-partial-applications-currying-compose-and-pipe)**
-33. **[Clean Code](#33-clean-code)**
+27. **[Estructures de dades](#27-data-structures)**
+28. **[Operacions Costoses i Notació _Big O_](#28-expensive-operation-and-big-o-notation)**
+29. **[Algorismes](#29-algorithms)**
+30. **[Herència, Polimorfisme i Reutilització de Codi](#30-inheritance-polymorphism-and-code-reuse)**
+31. **[Patrons de disseny](#31-design-patterns)**
+32. **[Aplicacions Parcials, Currying, Compose i Pipe](#32-partial-applications-currying-compose-and-pipe)**
+33. **[Codi net](#33-clean-code)**
 
 ---
 
-## 1. Call Stack
+## 1. Pila d'Execució
 
-### Reference
+### Referència
 
 - 📜 [Call Stack — MDN](https://developer.mozilla.org/en-US/docs/Glossary/Call_stack)
 
@@ -116,9 +116,9 @@ All the translations for this repo will be listed below:
 
 ---
 
-## 2. Primitive Types
+## 2. Tipus Primitius
 
-### Reference
+### Referència
 
 - 📜 [JavaScript data types and data structures — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Primitive_values)
 
@@ -149,7 +149,7 @@ All the translations for this repo will be listed below:
 
 ---
 
-## 3. Value Types and Reference Types
+## 3. Tipus de Valors i Tipus de Referència
 
 ### Articles
 
@@ -173,7 +173,7 @@ All the translations for this repo will be listed below:
 
 ---
 
-## 4. Implicit, Explicit, Nominal, Structuring and Duck Typing
+## 4. Implícit, Explícit, Nominal, Estructuració i _Duck Typing_
 
 ### Articles
 
@@ -190,7 +190,7 @@ All the translations for this repo will be listed below:
 - 🎥 [Typing: Static vs Dynamic, Weak vs. Strong - Codexpanse](https://www.youtube.com/watch?v=C5fr0LZLMAs)
 - 🎥 [EL SISTEMA de TIPOS DE JAVASCRIPT - La Cocina del Código](https://www.youtube.com/watch?v=0ei4nb49GKo)
 
-### Books
+### Llibres
 
 - [You Don't Know JS, 1st Edition: Types & Grammar — Kyle Simpson](https://github.com/getify/You-Dont-Know-JS/tree/1st-ed)
 
@@ -221,9 +221,9 @@ All the translations for this repo will be listed below:
 
 ---
 
-## 6. Function Scope, Block Scope and Lexical Scope
+## 6. Abast de Funció, Àmbit de Bloc i Abast Lèxic
 
-### Books
+### Llibres
 
 - [You Don't Know JS Yet, 2nd Edition: Scope & Closures — Kyle Simpson](https://github.com/getify/You-Dont-Know-JS/tree/2nd-ed/scope-closures)
 
@@ -256,7 +256,7 @@ All the translations for this repo will be listed below:
 
 ---
 
-## 7. Expression vs Statement
+## 7. Expresió vs Sentència
 
 ### Articles
 
@@ -275,7 +275,7 @@ All the translations for this repo will be listed below:
 
 ---
 
-## 8. IIFE, Modules and Namespaces
+## 8. IIFE, Mòduls i _Namespaces_
 
 ### Articles
 
@@ -307,7 +307,7 @@ All the translations for this repo will be listed below:
 
 ---
 
-## 9. Message Queue and Event Loop
+## 9. Cúa de Missatges i Loop d'Events
 
 ### Articles
 
@@ -333,7 +333,7 @@ All the translations for this repo will be listed below:
 
 ---
 
-## 10. setTimeout, setInterval and requestAnimationFrame
+## 10. setTimeout, setInterval i requestAnimationFrame
 
 ### Articles
 
@@ -355,7 +355,7 @@ All the translations for this repo will be listed below:
 
 ---
 
-## 11. JavaScript Engines
+## 11. Motors o Intèrprets de JavaScript
 
 ### Articles
 
@@ -377,7 +377,7 @@ All the translations for this repo will be listed below:
 
 ---
 
-## 12. Bitwise Operators, Type Arrays and Array Buffers
+## 12. Operadorss Bitwise, Tipus i _Buffers_ d'Array
 
 ### Articles
 
@@ -396,9 +396,9 @@ All the translations for this repo will be listed below:
 
 ---
 
-## 13. DOM and Layout Trees
+## 13. DOM i Disseny d'Arbre
 
-### Books
+### Llibres
 
 - 📜 [Eloquent JavaScript, 3rd Edition: Ch. 14 - The Document Object Model](https://eloquentjavascript.net/14_dom.html)
 
@@ -423,7 +423,7 @@ All the translations for this repo will be listed below:
 
 ---
 
-## 14. Factories and Classes
+## 14. Factories i Classes
 
 ### Articles
 
@@ -449,9 +449,9 @@ All the translations for this repo will be listed below:
 
 ---
 
-## 15. this, call, apply and bind
+## 15. this, call, apply i bind
 
-### Reference
+### Referència
 
 - 📜 [call() — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call)
 - 📜 [bind() — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind)
@@ -496,7 +496,7 @@ All the translations for this repo will be listed below:
 
 ---
 
-## 16. new, Constructor, instanceof and Instances
+## 16. new, Constructor, instanceof i Instances
 
 ### Articles
 
@@ -513,9 +513,9 @@ All the translations for this repo will be listed below:
 
 ---
 
-## 17. Prototype Inheritance and Prototype Chain
+## 17. Herència i Cadena de Prototipus
 
-### Reference
+### Referència
 
 - 📜 [Inheritance and the prototype chain — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
 
@@ -557,7 +557,7 @@ All the translations for this repo will be listed below:
 - 🎥 [A Beginner's Guide to Javascript's Prototype — Tyler Mcginnis](https://www.youtube.com/watch?v=XskMWBXNbp0)
 - 🎥 [Prototypes in Javascript - p5.js Tutorial — The Coding Train](https://www.youtube.com/watch?v=hS_WqkyUah8)
 
-### Books
+### Llibres
 
 - [You Don't Know JS, 1st Edition: this & Object Prototypes — Kyle Simpson](https://github.com/getify/You-Dont-Know-JS/tree/1st-ed)
 
@@ -567,7 +567,7 @@ All the translations for this repo will be listed below:
 
 ## 18. Object.create and Object.assign
 
-### Reference
+### Referència
 
 - 📜 [Object.create() — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create)
 - 📜 [Object.assign() — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
@@ -654,7 +654,7 @@ All the translations for this repo will be listed below:
 
 ---
 
-## 20. Pure Functions, Side Effects, State Mutation and Event Propagation
+## 20. Funcions Pures, Efectes Laterals, Mutació d'Estat i Propagació d'Events
 
 ### Articles
 
@@ -693,7 +693,7 @@ All the translations for this repo will be listed below:
 
 ## 21. Closures
 
-### Reference
+### Referència
 
 - 📜 [Closures — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 - 📜 [Closure — JavaScript.Info](https://javascript.info/closure)
@@ -740,9 +740,9 @@ All the translations for this repo will be listed below:
 
 ---
 
-## 22. High Order Functions
+## 22. Funcións d'Ordre Superior
 
-### Books
+### Llibres
 
 - 📜 [Eloquent JavaScript, 3rd Edition: Ch. 5 - Higher-order Functions](https://eloquentjavascript.net/05_higher_order.html)
 
@@ -772,7 +772,7 @@ All the translations for this repo will be listed below:
 
 ---
 
-## 23. Recursion
+## 23. Recursivitat
 
 ### Articles
 
@@ -804,9 +804,9 @@ All the translations for this repo will be listed below:
 
 ---
 
-## 24. Collections and Generators
+## 24. Col·leccions i Generadors
 
-### Reference
+### Referència
 
 - 📜 [Generator — MDN web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator)
 
@@ -841,9 +841,9 @@ All the translations for this repo will be listed below:
 
 ---
 
-## 25. Promises
+## 25. Promeses
 
-### Reference
+### Referència
 
 - 📜 [Promise — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
@@ -893,11 +893,11 @@ All the translations for this repo will be listed below:
 
 ## 26. async/await
 
-### Reference
+### Referència
 
 - 📜 [async/await — JavaScript.Info](https://javascript.info/async-await)
 
-### Books
+### Llibres
 
 - 📜 [Eloquent JavaScript, 3rd Edition: Ch. 11 - Asynchronous Programming](https://eloquentjavascript.net/11_async.html)
 - 📜 [Exploring JS: Asynchronous Programming](http://exploringjs.com/es6/ch_async.html)
@@ -941,7 +941,7 @@ All the translations for this repo will be listed below:
 
 ---
 
-## 27. Data Structures
+## 27. Estructures de dades
 
 ### Articles
 
@@ -971,7 +971,7 @@ All the translations for this repo will be listed below:
 
 ---
 
-## 28. Expensive Operation and Big O Notation
+## 28. Operacions Costoses i Notació _Big O_
 
 ### Articles
 
@@ -993,7 +993,7 @@ All the translations for this repo will be listed below:
 
 ---
 
-## 29. Algorithms
+## 29. Algorismes
 
 ### Articles
 
@@ -1011,9 +1011,9 @@ All the translations for this repo will be listed below:
 
 ---
 
-## 30. Inheritance, Polymorphism and Code Reuse
+## 30. Herència, Polimorfisme i Reutilització de Codi
 
-### Reference
+### Referència
 
 - 📜 [Inheritance in JavaScript — MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance)
 - 📜 [Class inheritance, super — JavaScript.Info](https://javascript.info/class-inheritance)
@@ -1037,9 +1037,9 @@ All the translations for this repo will be listed below:
 
 ---
 
-## 31. Design Patterns
+## 31. Patrons de disseny
 
-### Books
+### Llibres
 
 - 📜 [Learning JavaScript Design Patterns — Addy Osmani ](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
 
@@ -1073,9 +1073,9 @@ All the translations for this repo will be listed below:
 
 ---
 
-## 32. Partial Applications, Currying, Compose and Pipe
+## 32. Aplicacions Parcials, Currying, Compose i Pipe
 
-### Books
+### Llibres
 
 - 📜 [Functional-Light JavaScript: Ch. 3 - Managing Function Inputs — Kyle Simpson](https://github.com/getify/Functional-Light-JS/blob/master/manuscript/ch3.md)
 
@@ -1124,7 +1124,7 @@ All the translations for this repo will be listed below:
 
 ---
 
-## 33. Clean Code
+## 33. Codi net
 
 ### Articles
 
