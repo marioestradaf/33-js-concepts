@@ -11,12 +11,12 @@
 
 ## Introducció
 
-Aquest repositori va ser creat amb la intenció d'ajudar els desenvolupadors a dominar els seus conceptes en JavaScript. No és un requisit, sinó una guia per a futurs estudis. Està basat en un article escrit per [Stephen Curtis](https://twitter.com/stephenthecurt) i pot llegir-ho [aquí](https://medium.com/@stephenthecurt/33-fundamentals-every-javascript-developer-should-know-13dd720a90d1).
+Aquest repositori va ser creat amb la intenció d'ajudar als desenvolupadors a dominar els seus conceptes en JavaScript. És més aviat una guia per a futurs estudis que no pas un requisit. Està basat en un article escrit per [Stephen Curtis](https://twitter.com/stephenthecurt) i pot llegir-ho [aquí](https://medium.com/@stephenthecurt/33-fundamentals-every-javascript-developer-should-know-13dd720a90d1).
 
 **🚀 Considetat per GitHub com un dels [millors projectes de codi lliure del 2018!](https://blog.github.com/2018-12-13-new-open-source-projects/)**
 
 ## Comunitat
-Sigues lliure d'enviar un PR agregant un enllaç als seus propis resums o comentaris. Si desitjes traduir el repositori al teu idioma natiu, no dubti a fer-ho.
+Sigues lliure d'enviar un PR afegint un enllaç als seus propis resums o comentaris. Si desitges traduir el repositori al teu idioma natiu, no dubtis a fer-ho.
 
 Totes les traducciones per aquest repositori es llisten a continuació:
 
