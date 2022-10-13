@@ -1,4 +1,4 @@
-﻿<h1 align="center">
+<h1 align="center">
 <br>
   <a href="https://github.com/leonardomso/33"><img src="https://i.imgur.com/dsHmk6H.jpg" alt="33 Concepts Every JS Developer Should Know" width=200" /></a>
   <br>
@@ -11,17 +11,17 @@
 
 ## Introducció
 
-Aquest repositori va ser creat amb la intenció d'ajudar als desenvolupadors a dominar els seus conceptes en JavaScript. És més aviat una guia per a futurs estudis que no pas un requisit. Està basat en un article escrit per [Stephen Curtis](https://twitter.com/stephenthecurt) i pot llegir-ho [aquí](https://medium.com/@stephenthecurt/33-fundamentals-every-javascript-developer-should-know-13dd720a90d1).
+Aquest repositori va ser creat amb la intenció d'ajudar als desenvolupadors a dominar els seus conceptes en JavaScript. És més aviat una guia per a futurs estudis que no pas un requisit. Està basat en un article escrit per [Stephen Curtis](https://twitter.com/stephenthecurt) que pots llegir [aquí](https://medium.com/@stephenthecurt/33-fundamentals-every-javascript-developer-should-know-13dd720a90d1).
 
 **🚀 Considetat per GitHub com un dels [millors projectes de codi lliure del 2018!](https://blog.github.com/2018-12-13-new-open-source-projects/)**
 
 ## Comunitat
 Sigues lliure d'enviar un PR afegint un enllaç als seus propis resums o comentaris. Si desitges traduir el repositori al teu idioma natiu, no dubtis a fer-ho.
 
-Totes les traducciones per aquest repositori es llisten a continuació:
+Totes les traduccions per aquest repositori es llisten a continuació:
 
 - [Shqip (Albanian)](https://github.com/eldrinf/33-js-concepts-albanian.git) — Eldrin Ereqi
-- [اَلْعَرَبِيَّةُ‎ (Arabic)](https://github.com/amrsekilly/33-js-concepts) — Amr Elsekilly
+- [اَلْعَرَبِيَّةُ(Arabic)](https://github.com/amrsekilly/33-js-concepts) — Amr Elsekilly
 - [汉语 (Chinese)](https://github.com/stephentian/33-js-concepts) — Re Tian
 - [Português do Brasil (Brazilian Portuguese) ](https://github.com/tiagoboeing/33-js-concepts) — Tiago Boeing
 - [한국어 (Korean)](https://github.com/yjs03057/33-js-concepts.git) — Suin Lee
@@ -47,39 +47,39 @@ Totes les traducciones per aquest repositori es llisten a continuació:
 
 ## <a id="table-of-contents">Taula de Continguts</a>
 
-1. **[Pila d'Execució](#1-call-stack)**
-2. **[Tipus Primitius](#2-primitive-types)**
-3. **[Tipus de Valors i Tipus de Referència](#3-value-types-and-reference-types)**
-4. **[Implícit, Explícit, Nominal, Estructuració i _Duck Typing_](#4-implicit-explicit-nominal-structuring-and-duck-typing)**
+1. **[Pila d'Execució](#1-pila-dexecució)**
+2. **[Tipus Primitius](#2-tipus-primitius)**
+3. **[Tipus de Valors i Tipus de Referència](#3-tipus-de-valors-i-tipus-de-referència)**
+4. **[Implícit, Explícit, Nominal, Estructuració i _Duck Typing_](#4-impl%C3%ADcit-expl%C3%ADcit-nominal-estructuració-i-duck-typing)**
 5. **[== vs === vs typeof](#5--vs--vs-typeof)**
-6. **[Abast de Funció, Àmbit de Bloc i Abast Lèxic](#6-function-scope-block-scope-and-lexical-scope)**
-7. **[Expresió vs Sentència](#7-expression-vs-statement)**
-8. **[IIFE, Mòduls i _Namespaces_](#8-iife-modules-and-namespaces)**
-9. **[Cúa de Missatges i Loop d'Events](#9-message-queue-and-event-loop)**
-10. **[setTimeout, setInterval i requestAnimationFrame](#10-settimeout-setinterval-and-requestanimationframe)**
-11. **[Motors JavaScript](#11-javascript-engines)**
-12. **[Operadorss Bitwise, Tipus i _Buffers_ d'Array](#12-bitwise-operators-type-arrays-and-array-buffers)**
-13. **[DOM i Disseny d'Arbre](#13-dom-and-layout-trees)**
-14. **[Factories i Classes](#14-factories-and-classes)**
-15. **[this, call, apply i bind](#15-this-call-apply-and-bind)**
-16. **[new, Constructor, instanceof i Instances](#16-new-constructor-instanceof-and-instances)**
-17. **[Herència i Cadena de Prototipus](#17-prototype-inheritance-and-prototype-chain)**
-18. **[Object.create and Object.assign](#18-objectcreate-and-objectassign)**
+6. **[Abast de Funció, Àmbit de Bloc i Abast Lèxic](#6-abast-de-funció-àmbit-de-bloc-i-abast-lèxic)**
+7. **[Expresió vs Sentència](#7-expresió-vs-sentència)**
+8. **[IIFE, Mòduls i _Namespaces_](#8-iife-mòduls-i-namespaces)**
+9. **[Cúa de Missatges i Loop d'Events](#9-cúa-de-missatges-i-loop-devents)**
+10. **[setTimeout, setInterval i requestAnimationFrame](#10-settimeout-setinterval-i-requestanimationframe)**
+11. **[Motors JavaScript](#11-motors-o-intèrprets-de-javascript)**
+12. **[Operadors Bitwise, Tipus i _Buffers_ d'Array](#12-operadors-bitwise-tipus-i-buffers-darray)**
+13. **[DOM i Disseny d'Arbre](#13-dom-i-disseny-darbre)**
+14. **[Factories i Classes](#14-factories-i-classes)**
+15. **[this, call, apply i bind](#15-this-call-apply-i-bind)**
+16. **[new, Constructor, instanceof i Instances](#16-new-constructor-instanceof-i-instances)**
+17. **[Herència i Cadena de Prototipus](#17-herència-i-cadena-de-prototipus)**
+18. **[Object.create i Object.assign](#18-objectcreate-i-objectassign)**
 19. **[map, reduce, filter](#19-map-reduce-filter)**
-20. **[Funcions Pures, Efectes Laterals, Mutació d'Estat i Propagació d'Events](#20-pure-functions-side-effects-state-mutation-and-event-propagation)**
+20. **[Funcions Pures, Efectes Laterals, Mutació d'Estat i Propagació d'Events](#20-funcions-pures-efectes-laterals-mutació-destat-i-propagació-devents)**
 21. **[Closures](#21-closures)**
-22. **[Funcións d'Ordre Superior](#22-high-order-functions)**
-23. **[Recursivitat](#23-recursion)**
-24. **[Col·leccions i Generadors](#24-collections-and-generators)**
-25. **[Promeses](#25-promises)**
+22. **[Funcións d'Ordre Superior](#22-funcións-dordre-superior)**
+23. **[Recursivitat](#23-recursivitat)**
+24. **[Col·leccions i Generadors](#24-colleccions-i-generadors)**
+25. **[Promeses](#25-promeses)**
 26. **[async/await](#26-asyncawait)**
-27. **[Estructures de dades](#27-data-structures)**
-28. **[Operacions Costoses i Notació _Big O_](#28-expensive-operation-and-big-o-notation)**
-29. **[Algorismes](#29-algorithms)**
-30. **[Herència, Polimorfisme i Reutilització de Codi](#30-inheritance-polymorphism-and-code-reuse)**
-31. **[Patrons de disseny](#31-design-patterns)**
-32. **[Aplicacions Parcials, Currying, Compose i Pipe](#32-partial-applications-currying-compose-and-pipe)**
-33. **[Codi net](#33-clean-code)**
+27. **[Estructures de dades](#27-estructures-de-dades)**
+28. **[Operacions Costoses i Notació _Big O_](#28-operacions-costoses-i-notació-big-o)**
+29. **[Algorismes](#29-algorismes)**
+30. **[Herència, Polimorfisme i Reutilització de Codi](#30-herència-polimorfisme-i-reutilització-de-codi)**
+31. **[Patrons de disseny](#31-patrons-de-disseny)**
+32. **[Aplicacions Parcials, Currying, Compose i Pipe](#32-aplicacions-parcials-currying-compose-i-pipe)**
+33. **[Codi net](#33-codi-net)**
 
 ---
 
@@ -377,7 +377,7 @@ Totes les traducciones per aquest repositori es llisten a continuació:
 
 ---
 
-## 12. Operadorss Bitwise, Tipus i _Buffers_ d'Array
+## 12. Operadors Bitwise, Tipus i _Buffers_ d'Array
 
 ### Articles
 
@@ -565,7 +565,7 @@ Totes les traducciones per aquest repositori es llisten a continuació:
 
 ---
 
-## 18. Object.create and Object.assign
+## 18. Object.create i Object.assign
 
 ### Referència
 
